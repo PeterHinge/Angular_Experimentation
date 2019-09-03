@@ -3,23 +3,31 @@
     <a class="navbar-brand mb-0 h1" routerLink="/">
       SortGrapher
     </a>
-    <button class="btn btn-primary" type="submit">Randomize</button>
+    <button class="btn btn-primary" type="submit" id="randomize">
+      Randomize Array
+    </button>
+
     &nbsp; &nbsp;
-    <select
-      class="custom-select col-sm-3"
-      id="inputGroupSelect04"
-      aria-label="Example select with button addon"
-    >
-      <option selected>Choose Algorithm...</option>
-      <option value="1" id="">Merge Sort</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+    <select class="custom-select col-sm-2" id="sizeSelect">
+      <option selected>Choose Array-size...</option>
+      <option value="1" id="small">Small (25)</option>
+      <option value="2" id="medium">Medium (50)</option>
+      <option value="3" id="large">Large (100)</option>
+      <option value="4" id="huge">Huge (200)</option>
     </select>
     &nbsp; &nbsp;
-    <button class="btn btn-success" type="submit">
+    <select class="custom-select col-sm-3" id="algorithmSelect">
+      <option selected>Choose Algorithm...</option>
+      <option id="bubbleSort">Bubble Sort</option>
+      <option id="mergeSort">Merge Sort</option>
+    </select>
+    &nbsp; &nbsp;
+    <button class="btn btn-success" type="submit" id="sort">
       Sort!
     </button>
   </div>
 </nav>
+
+<canvas id="canvas"></canvas>
 
 <router-outlet></router-outlet>
