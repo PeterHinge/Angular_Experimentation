@@ -8,4 +8,3 @@ import { Component, ViewChild, ElementRef, OnInit } from "@angular/core";
 export class AppComponent {
   title = "sortgrapher";
 }
-export class Canvas {}
